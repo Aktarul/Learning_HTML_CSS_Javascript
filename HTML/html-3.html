@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>html-3</title>
+<style>
+	ul#uu{
+		list-style-type: circle;
+		margin: 0;
+		overflow: hidden;
+		background-color: rgb(133,133,133);
+	}
+	li#l{
+		float: left;
+		display: block;
+
+	}
+
+	a{
+		display: block;
+		padding: 16px;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+	}
+	a:hover {
+		background-color: rgb(12,12,12);
+	}
+</style>
+</head>
+<body>
+	<!--List-->
+	<h3>Unordered list</h3>
+	<ul style="list-style-type: square;">
+		<li>coffee</li>
+		<li>tea
+			<ul style="list-style-type: square;">
+			<li>black tea</li>
+			<li>green tea</li>
+			</ul>
+		</li>
+		<li>milk</li>
+	</ul>
+
+	<h3>Ordered list</h3>
+	<ol type="i">
+		<li>coffee</li>
+		<li>tea</li>
+		<li>milk</li>
+	</ol>
+
+	<h3>Description list</h3>
+	<dl>
+		<dt>Coffee</dt>
+		<dd>black coffee</dd>
+		<dt>Tea</dt>
+		<dd>cold tea</dd>
+		<dt>Milk</dt>
+		<dd>very cold milk</dd>
+	</dl>
+
+	<ul id="uu">
+		<li id="l"><a href="#home">Home</a></li>
+		<li id="l"><a href="news">News</a></li>
+		<li id="l"><a href="contact">Contact</a></li>
+		<li id="l"><a href="#about">About</a></li>
+	</ul>
+
+
+
+</body>
+</html>
