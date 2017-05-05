@@ -1,12 +1,14 @@
 <html>
 <head>
 <title>html-3</title>
+
+	<!--List-->
 <style>
 	ul#uu{
 		list-style-type: circle;
 		margin: 0;
 		overflow: hidden;
-		background-color: rgb(133,133,133);
+		background-color: rgb(133,100,133);
 	}
 	li#l{
 		float: left;
@@ -14,7 +16,7 @@
 
 	}
 
-	a{
+	li a{
 		display: block;
 		padding: 16px;
 		color: white;
@@ -22,12 +24,31 @@
 		text-decoration: none;
 	}
 	a:hover {
-		background-color: rgb(12,12,12);
+		background-color: rgb(50,50,50);
 	}
+
+	ul#u01{
+		list-style-type: none;
+		overflow: hidden;
+		float: left;
+		display: block;
+		background-color: rgb(50,100,100);
+
+	}
+	li#l2{
+		float: left;
+		padding: 5px;
+	}
+
+	div.menu{
+		background-color: rgb(152,152,152);
+		padding: 5px;
+	}
+
 </style>
 </head>
 <body>
-	<!--List-->
+<div style="background-color: rgb(211,211,211);padding: 5px;">
 	<h3>Unordered list</h3>
 	<ul style="list-style-type: square;">
 		<li>coffee</li>
@@ -39,14 +60,20 @@
 		</li>
 		<li>milk</li>
 	</ul>
+</div>
 
+
+<div style="background-color: rgb(200,200,200);padding: 5px;">
 	<h3>Ordered list</h3>
 	<ol type="i">
 		<li>coffee</li>
 		<li>tea</li>
 		<li>milk</li>
 	</ol>
+</div>
 
+
+<div style="background-color: rgb(170,170,170);padding: 5px;">
 	<h3>Description list</h3>
 	<dl>
 		<dt>Coffee</dt>
@@ -56,14 +83,34 @@
 		<dt>Milk</dt>
 		<dd>very cold milk</dd>
 	</dl>
+</div>
 
+
+<div class="menu">
+	<h3>Create Menu</h3>
 	<ul id="uu">
 		<li id="l"><a href="#home">Home</a></li>
-		<li id="l"><a href="news">News</a></li>
-		<li id="l"><a href="contact">Contact</a></li>
+		<li id="l"><a href="#news">News</a></li>
+		<li id="l"><a href="#contact">Contact</a></li>
 		<li id="l"><a href="#about">About</a></li>
 	</ul>
+</div>
+<div class="menu">
+	<ul id="u01">
+		<li id="l2"><a href="#Menu">Menu</a></li>
+		<li id="l2"><a href="#Order">Order</a></li>
+		<li id="l2"><a href="#Contact Us">Contact Us</a></li>
+		<li id="l2"><a href="#Help">Help</a></li>
+	</ul><br><br><br><br><br>
 
+</div>
+
+<!--iframe-->
+<div style="background-color: rgb(130,130,130);padding: 25px;">
+	<h3>Bing Search Engine</h3>
+	<iframe src="http://www.bing.com" width="90%" height="60%" style="border: none;" name="iframe_01"></iframe>
+	<p style="font-size: 150%"><span style="font-size: 150%">Open </span><a href="http://www.bing.com" target="iframe_01"> Bing </a> / <a href="http://www.w3schools.com" target="iframe_01">W3School</a> at the <span style="font-size: 150%">iframe</span></p>
+</div>
 
 
 </body>
