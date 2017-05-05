@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html-4</title>
+</head>
+<body>
+<!--javascript-->
+	<p id="demo"></p>
+
+	<script>
+		document.getElementById("demo").innerHTML = "Hello World!";
+	</script>
+
+	<p id="demo2">This is a demostration.</p>
+	<button onclick="myFunction()">Change text!</button>
+	<button onclick="myFunction2()">Change style!</button>
+	<script>
+		function myFunction(){
+			document.getElementById("demo2").innerHTML = "Hello World!";
+		}
+		function myFunction2() {
+			document.getElementById("demo2").style.fontSize = "25px";
+			document.getElementById("demo2").style.color = "red";
+		}
+	</script>
+	<br>
+	<button onclick="light(1)">On</button>
+	<img id="myImage" src="https://www.w3schools.com/html/pic_bulboff.gif">
+	<button onclick="light(2)">Off</button>
+
+
+	<script>
+		function light(ar){
+			if(ar==2){
+				document.getElementById('myImage').src = "https://www.w3schools.com/html/pic_bulboff.gif"
+			}
+			else {
+				document.getElementById('myImage').src = "https://www.w3schools.com/html/pic_bulbon.gif"
+			}
+		}
+	</script>
+
+
+
+	<noscript>Sorry, this browser does not support JavaScript!</noscript>
+
+
+
+</body>
+</html>
