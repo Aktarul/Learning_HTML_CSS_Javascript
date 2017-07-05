@@ -1,9 +1,23 @@
 body {
 	background-color: lightblue;
+	background-image: url(https://s-media-cache-ak0.pinimg.com/236x/0c/b5/43/0cb543053349a08ff6ba919f9c1781ab.jpg);
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+
 }
 
 h1{
 	color = navy;
 	margin-left: 20px;
 	font-size: 150%;
+}
+
+div {
+	font-size: 150%;
+}
+
+.hello {
+	font-family: Calibri;
+	font-size: 30px;
+	font-style: italic;
 }
