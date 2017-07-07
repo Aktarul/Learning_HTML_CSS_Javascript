@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function myFunction(){
+			document.getElementById("hello").innerHTML = "Hello World!";
+		}
+
+	</script>
+</head>
+<body>
+
+	<h2>My First JavaScript</h2>
+
+	<button type="button"
+	onclick="document.getElementById('demo').innerHTML = Date()">
+	Click me to display Date and Time.</button>
+
+	<p id="demo"></p>
+
+	<img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width: 100px">
+	<br>
+	<button onclick="document.getElementById('bulb').src='https://www.w3schools.com/js/pic_bulbon.gif'">bulb on</button>
+	<button onclick="document.getElementById('bulb').src='https://www.w3schools.com/js/pic_bulboff.gif'">bulb off</button>
+
+	<h2 id="hello">......... World! <button onclick = "myFunction()">..Fill</button> </h2>
+	
+	
+
+
+
+
+</body>
+</html> 
