@@ -14,9 +14,7 @@
 
 	<button type="button"
 	onclick="document.getElementById('demo').innerHTML = Date()">
-	Click me to display Date and Time.</button>
-
-	<p id="demo"></p>
+	Click me to display Date and Time.</button> <br>
 
 	<img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width: 100px">
 	<br>
@@ -25,10 +23,24 @@
 
 	<h2 id="hello">......... World! <button onclick = "myFunction()">..Fill</button> </h2>
 	
-	
+	<h4 id="demo2"></h4>
+	<p id="demo"></p>
 
+	<script>
+		document.write( 5+5*8);
+		window.alert('an alert!');
+		var x,y;
+		x = 7 ;
+		y = x-3 ;
+		z= x + y ;
+		//z=10; will not be executed
 
+		var firstName = "Aktarul", lastName = "Islam";
+		document.getElementById("demo").innerHTML = firstName + " " + lastName;
+		document.getElementById("demo2").innerHTML = "Result of the equations :" + (z + 9);
+
+	</script>
 
 
 </body>
-</html> 
+</html>
