@@ -4,18 +4,102 @@
 	<p id = "hello"></p>
 	<h3 id = "id2"></h3>
 	<p id = "id3"></p>
+	<p id = "id4"></p>
+	<h4 id = "id5"></h4>
+	<h4 id = "id6(2)" style = "text-align: center;"></h4>	
+	<h4 id = "id6" style = "text-align: center;"></h4>	
+	<h4 id = "id7" style = "text-align: center;"></h4>
+	<h4 id = "id8" style = "text-align: center;"></h4>
+	<h4 id = "id9" style = "text-align: center; font-size: 200%;"></h4>
+
 	<script>
 	var x = 5;
-	var y = 2;
+	var y = 2;		
 	var z = x + y;
 	document.getElementById("hello").innerHTML = "Output: " + z;
 
 	var txt1 = "Hello";
-	var txt2 = "World!";
+	var txt2 = "World!";		//concatenation
 	document.getElementById("id2").innerHTML = txt1 + " " + txt2;
 
 	txt1+= " People!" ;
 	document.getElementById("id3").innerHTML = txt1;
+
+
+	function My_function(a, b){
+		return a * b;				//use  a function
+	}
+	document.getElementById("id4").innerHTML = "(12 X 23) Multiplication: " + My_function(12,23);
+	txt3 = "(5 X 9) Multiplication: " + My_function(5, 9);
+	document.getElementById("id5").innerHTML = txt3;	
+
+	var Computer = {Type: "Notebook", Model: "x23", Color: "Black"};	//object
+	document.getElementById("id6").innerHTML = Computer.Type+ "\xa0\xa0\xa0\xa0" + Computer.Model + "\xa0\xa0\xa0" + Computer.Color;
+	document.getElementById("id6(2)").innerHTML = "Computer_Type\xa0 Model\xa0 Color"
+
+	var person = {
+    firstName: "John",
+    lastName : "Doe",
+    id       : 5566,
+    fullName : function(middleName) {
+       return this.firstName + " "+ middleName + " " + this.lastName;
+    }
+	};
+	document.getElementById("id7").innerHTML = person.fullName("Hamish");
+	</script>
+
+	<div style="text-align: center;">
+		<button style="
+		    background-color: #4CAF50;
+		    border: none;
+		    color: white;
+		    text-align: center;
+		    padding: 5px 10px;
+		    display: inline-block;
+		    font-size: 16px;
+		    cursor: pointer;" onclick="displayDate()"> TIME ? </button>
+
+		<button style="
+		    background-color: #4CAF50;
+		    border: none;
+		    color: white;
+		    text-align: center;
+		    padding: 5px 10px;
+		    display: inline-block;
+		    font-size: 16px;
+		    cursor: pointer;" onclick="myFunction() ">Reload page</button>	<!--reload button-->
+	</div>
+
+	<script>
+
+	function displayDate() {		// Display Only Time
+		var now = new Date();
+		var i = now.getHours();
+		if(i<9){ 
+			txt4 = "0"+i;
+		}else {
+			txt4 = i;
+		}
+		i = now.getMinutes();
+		if(i<9){ 
+			txt4 += " : 0" + i;
+		} else {
+			txt4 += " : " + i;
+		}
+		i = now.getSeconds();
+		if(i<9){ 
+			txt4 += " : 0" + i;
+		} else {
+			txt4 += " : " + i;
+		}
+		document.getElementById("id9").innerHTML = txt4;
+		//document.getElementById("id9").innerHTML = Date();
+	    setTimeout(displayDate,500);
+		}
+
+	function myFunction() {
+    	location.reload();
+	}
 	</script>
 </body>
 </html>
